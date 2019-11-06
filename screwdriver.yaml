@@ -57,4 +57,5 @@ jobs:
     requires: main
     image: arielkv/dind-glibc
     steps:
+      - docker-deamon: systemctl start docker
       - docker: docker images
