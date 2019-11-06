@@ -55,6 +55,6 @@ jobs:
       - run_arbitrary_script: ./my_script.sh
   docker_run:
     requires: main
-    image: docker
+    image: arielkv/dind-glibc
     steps:
       - docker: docker images
