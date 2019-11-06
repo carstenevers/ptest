@@ -54,6 +54,7 @@ jobs:
       # this step
       - run_arbitrary_script: ./my_script.sh
   docker_run:
+    requires: [~pr, ~commit]
     image: docker
     steps:
       - docker: docker images
